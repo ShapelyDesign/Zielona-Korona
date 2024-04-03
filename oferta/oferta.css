@@ -1,0 +1,353 @@
+body {
+  font-family: "Roboto Serif", serif;
+  background: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  font-size: 45px;
+  letter-spacing: 0.1em;
+  color: #b6c4b6;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+h4 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  letter-spacing: 0.05em;
+  text-align: center;
+  color: #0a0a0a;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.logo {
+  width: 250px;
+  height: 156.07px;
+  display: flex;
+  align-items: center;
+}
+
+.topbar {
+  height: 196px;
+  background-color: #163020;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  height: 60px;
+  background-color: #163020;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  border-bottom: 2px solid #b6c4b6;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.menu_item {
+  margin: 0 1vw;
+}
+
+.menu_link {
+  display: inline-block;
+  padding: 5px 20px;
+  margin-left: 1.5vw;
+  margin-right: 1.5vw;
+  text-decoration: none;
+  font-family: "Roboto Serif", serif;
+  font-weight: 500;
+  font-size: 22px;
+  color: #fff;
+  background-color: none;
+  border: none;
+  border-radius: 10px;
+  transition: color 0.4s ease;
+}
+
+.menu_link:hover {
+  color: #b6c4b6;
+}
+
+.menu_link_active {
+  display: inline-block;
+  padding: 5px 20px;
+  margin-left: 1.5vw;
+  margin-right: 1.5vw;
+  text-decoration: none;
+  font-family: "Roboto Serif", serif;
+  font-weight: 800;
+  font-size: 22px;
+  color: #b6c4b6;
+  background-color: none;
+  border: none;
+  border-radius: 10px;
+  transition: color 0.4s ease;
+}
+
+@media screen and (max-width: 768px) {
+  .menu_item {
+    margin: 0;
+  }
+
+  .menu_link {
+    margin: 0;
+    padding: 5px 10px;
+    font-weight: 400;
+    font-size: 20px;
+  }
+
+  .menu_link_active {
+    margin: 0;
+    padding: 5px 10px;
+    font-weight: 600;
+    font-size: 20px;
+  }
+}
+
+.offers {
+  background-color: #fff;
+  height: auto;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  gap: 20px;
+}
+
+.section_title {
+  width: 100%;
+  text-align: center;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+}
+
+.offer {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 20px;
+  border: 2px solid #b6c4b6;
+  box-shadow: 0 0 10px rgb(202, 201, 201);
+}
+
+.container_offer {
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.detal_offer {
+  flex-basis: calc(25% - 20px);
+  margin-bottom: 1vw;
+  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1vw;
+  margin-bottom: 20px;
+}
+
+.icon_offer {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+  margin-top: -25px;
+}
+
+.container_title {
+  width: 100%;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 1vw;
+}
+
+.detal_offer p {
+  font-family: "Roboto Serif", serif;
+  width: 250px;
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: 0.1em;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  color: #000;
+}
+
+.more_offers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.more_offer {
+  flex-basis: calc(33.3% - 20px);
+  background: white;
+  margin-bottom: 6vw;
+  border-radius: 20px;
+  border: 2px solid #b6c4b6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 0 10px rgb(202, 201, 201);
+  margin-top: 6vw;
+}
+
+.image_offer {
+  width: 80%;
+  margin-left: 2.1vw;
+  margin-right: 2.1vw;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #b6c4b6;
+  display: flex;
+  align-items: flex-end;
+}
+
+.image_more_offer {
+  width: 80%;
+  min-width: 195px;
+  margin-left: 2.1vw;
+  margin-right: 2.1vw;
+  margin-bottom: 40px;
+  margin-top: 30px;
+  border-radius: 10px;
+  border: 1px solid #b6c4b6;
+  display: flex;
+  align-items: flex-end;
+}
+
+@media screen and (max-width: 600px) {
+  .offer {
+    margin-bottom: 20px;
+  }
+
+  .image_offer {
+    margin-bottom: 20px;
+  }
+
+  .detal_offer p {
+    font-weight: 400;
+    padding: 0;
+    margin-bottom: 5px;
+  }
+
+  .detal_offer {
+    margin-bottom: 1vw;
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+  }
+
+  .image_more_offer {
+    margin-bottom: 10px;
+  }
+}
+
+.footer {
+  height: 195px;
+  background-color: #163020;
+  border-bottom: 1px solid #b6c4b6;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  justify-content: center;
+  padding-left: 30vw;
+  padding-right: 20vw;
+}
+
+.small_logo {
+  width: 200px;
+  height: 124.86px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 6vw;
+}
+
+.text_footer {
+  height: 110px;
+  width: 700px;
+  font-family: "Roboto Serif", serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 175%;
+  color: #fff;
+  margin: 0;
+}
+
+.icon_fb {
+  margin-left: 40px;
+}
+
+@media screen and (max-width: 868px) {
+  .icon_fb {
+    margin-top: 10px;
+    margin-left: 100px;
+  }
+
+  .small_logo {
+    width: 150px;
+    height: 93.64px;
+  }
+  .text_footer {
+    width: 250px;
+    font-weight: 300px;
+    font-size: 16px;
+    line-height: 150%;
+  }
+}
+
+.policy {
+  height: 55px;
+  background-color: #163020;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.policy_text {
+  margin: 0;
+  font-family: "Roboto Serif", serif;
+  font-weight: 200;
+  font-size: 15px;
+  line-height: 175%;
+  color: #b6c4b6;
+  letter-spacing: 0.05em;
+}
