@@ -42,7 +42,7 @@ h3 {
   letter-spacing: 0.1em;
   color: #ffffff;
   filter: blur(3);
-  
+
   margin: 0;
   padding-bottom: 70px;
 }
@@ -66,6 +66,7 @@ h4 {
 
 .topbar {
   height: 196px;
+  width: 100%;
   background-color: #163020;
   display: flex;
   justify-content: center;
@@ -74,6 +75,7 @@ h4 {
 
 .header {
   height: 60px;
+  width: 100%;
   background-color: #163020;
   display: flex;
   justify-content: center;
@@ -140,16 +142,18 @@ h4 {
     margin: 0;
     padding: 5px 10px;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 24px;
   }
 
   .menu_link_active {
     margin: 0;
     padding: 5px 10px;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 24px;
   }
 }
+
+/* SEKCJA - WSTĘP */
 
 .image {
   background: linear-gradient(
@@ -189,6 +193,16 @@ h4 {
 .button1:hover {
   color: #304d30;
   background-color: #eef0e5;
+}
+
+@media screen and (max-width: 1080px) {
+  .text_frame_1 {
+    padding-left: 10vw;
+    padding-top: 11vw;
+    opacity: 1;
+  }
+
+  /* SEKCJA - O NAS  */
 }
 
 .frame_about {
@@ -271,6 +285,55 @@ h4 {
   padding-bottom: 40px;
 }
 
+@media screen and (max-width: 1080px) {
+  .photo_frame_about {
+    width: 70%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about {
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 6vw;
+    padding-bottom: 6vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .text_about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: calc(70%);
+    margin: 0;
+    flex-direction: column;
+  }
+
+  .about_title {
+    font-family: "Playfair Display", serif;
+    font-weight: 600;
+    font-size: 70px;
+    letter-spacing: 0.1em;
+    display: flex;
+    color: #b6c4b6;
+    margin: 0;
+  }
+
+  .text_about p {
+    font-size: 22px;
+    text-align: center;
+  }
+}
+
+/* SEKCJA - NUMERY */
+
 .frame_numbers {
   background-color: #304d30;
   height: auto;
@@ -328,6 +391,14 @@ h4 {
   display: flex;
 }
 
+@media screen and (max-width: 1080px) {
+  .frame_numbers {
+    width: 100%;
+  }
+}
+
+/* SEKCJA - DLACZEGO MY ?  */
+
 .reasons {
   background-color: white;
   height: auto;
@@ -361,6 +432,39 @@ h4 {
   align-items: center;
   text-align: center;
   box-shadow: 0 0 10px rgb(202, 201, 201);
+}
+
+@media screen and (max-width: 1080px) {
+  .container {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .container p {
+    margin: 0;
+    font-size: 22px;
+  }
+
+  .section_title {
+    font-family: "Playfair Display", serif;
+    font-weight: 600;
+    font-size: 70px;
+    letter-spacing: 0.1em;
+    display: flex;
+    justify-content: center;
+    color: #b6c4b6;
+    margin: 50px;
+  }
+
+  .reason {
+    flex-basis: calc(50% - 20px);
+  }
 }
 
 @media (max-width: 768px) {
