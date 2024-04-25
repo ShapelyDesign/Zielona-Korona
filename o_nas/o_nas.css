@@ -31,6 +31,8 @@ h2 {
   align-items: center;
 }
 
+/* SEKCJA - MENU */
+
 .header {
   height: 60px;
   background-color: #163020;
@@ -62,7 +64,7 @@ h2 {
   text-decoration: none;
   font-family: "Roboto Serif", serif;
   font-weight: 500;
-  font-size: 22px;
+  font-size: 24px;
   color: #fff;
   background-color: none;
   border: none;
@@ -82,7 +84,7 @@ h2 {
   text-decoration: none;
   font-family: "Roboto Serif", serif;
   font-weight: 800;
-  font-size: 22px;
+  font-size: 24px;
   color: #b6c4b6;
   background-color: none;
   border: none;
@@ -181,6 +183,42 @@ h2 {
   background-color: #eef0e5;
 }
 
+@media screen and (max-width: 1140px) {
+  .aboutus {
+    margin: auto;
+    padding-top: 3vw;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+
+  .image_aboutus {
+    width: 70%;
+    height: 70%;
+  }
+
+  .text_aboutus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    width: 70%;
+  }
+
+  .aboutus_title {
+    font-size: 70px;
+    margin: 0;
+  }
+
+  .text_aboutus p {
+    font-size: 22px;
+    text-align: center;
+  }
+}
+
 .opinions {
   display: flex;
   align-items: center;
@@ -250,6 +288,47 @@ h2 {
   font-weight: 600;
   letter-spacing: 0.06em;
 }
+
+@media screen and (max-width: 1080px) {
+  .container {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-between;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .section_title {
+    font-size: 70px;
+    margin: 30px;
+  }
+
+  .opinion p {
+    margin: 0;
+    line-height: 100%;
+    font-size: 22px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .opinion {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .opinion {
+    flex-basis: calc(50% - 20px);
+  }
+}
+
+/* SEKCJA - STOPKA */
 
 .footer {
   height: 195px;

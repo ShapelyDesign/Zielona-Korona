@@ -43,6 +43,8 @@ h4 {
   align-items: center;
 }
 
+/* SEKCJA - MENU */
+
 .header {
   height: 60px;
   background-color: #163020;
@@ -74,7 +76,7 @@ h4 {
   text-decoration: none;
   font-family: "Roboto Serif", serif;
   font-weight: 500;
-  font-size: 22px;
+  font-size: 24px;
   color: #fff;
   background-color: none;
   border: none;
@@ -94,7 +96,7 @@ h4 {
   text-decoration: none;
   font-family: "Roboto Serif", serif;
   font-weight: 800;
-  font-size: 22px;
+  font-size: 24px;
   color: #b6c4b6;
   background-color: none;
   border: none;
@@ -121,6 +123,8 @@ h4 {
     font-size: 20px;
   }
 }
+
+/* SEKCJA - OFERTA */
 
 .offers {
   background-color: #fff;
@@ -253,7 +257,45 @@ h4 {
   align-items: flex-end;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1080px) {
+  .container {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .section_title {
+    font-size: 70px;
+    margin: 30px;
+  }
+
+  .detal_offer {
+    flex-basis: calc(50% - 20px);
+  }
+
+  .container_title {
+    font-size: 25px;
+  }
+
+  .detal_offer p {
+    font-size: 23px;
+    width: 300px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .more_offer {
+    flex-basis: calc(50% - 20px);
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+
+  .more_offer h4 {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 650px) {
   .offer {
     margin-bottom: 20px;
   }
@@ -265,6 +307,7 @@ h4 {
   .detal_offer p {
     font-weight: 400;
     padding: 0;
+    width: 200px;
     margin-bottom: 5px;
   }
 
@@ -279,6 +322,8 @@ h4 {
     margin-bottom: 10px;
   }
 }
+
+/* SEKCJA - STOPKA */
 
 .footer {
   height: 195px;

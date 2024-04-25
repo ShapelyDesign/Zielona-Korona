@@ -12,16 +12,9 @@ h1 {
   letter-spacing: 0.1em;
   color: #ffffff;
   backdrop-filter: blur(1px);
-  padding-bottom: 33px;
+  padding-bottom: 35px;
   margin: 0;
   opacity: 0.8;
-}
-
-@media screen and (max-width: 1300px) {
-  h1 {
-    font-size: 40px; /* Minimalna wielkość fontu */
-    font-weight: bolder;
-  }
 }
 
 h2 {
@@ -42,7 +35,6 @@ h3 {
   letter-spacing: 0.1em;
   color: #ffffff;
   filter: blur(3);
-
   margin: 0;
   padding-bottom: 70px;
 }
@@ -72,6 +64,8 @@ h4 {
   justify-content: center;
   align-items: center;
 }
+
+/* SEKCJA - MENU */
 
 .header {
   height: 60px;
@@ -105,7 +99,7 @@ h4 {
   text-decoration: none;
   font-family: "Roboto Serif", serif;
   font-weight: 500;
-  font-size: 22px;
+  font-size: 24px;
   color: #fff;
   background-color: none;
   border: none;
@@ -125,7 +119,7 @@ h4 {
   text-decoration: none;
   font-family: "Roboto Serif", serif;
   font-weight: 800;
-  font-size: 22px;
+  font-size: 24px;
   color: #b6c4b6;
   background-color: none;
   border: none;
@@ -195,15 +189,25 @@ h4 {
   background-color: #eef0e5;
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1200px) {
   .text_frame_1 {
-    padding-left: 10vw;
+    padding-left: 100px;
+    padding-right: 100px;
     padding-top: 11vw;
     opacity: 1;
   }
 
-  /* SEKCJA - O NAS  */
+  .text_frame_1 h1 {
+    font-size: 46px;
+  }
+
+  .text_frame_1 h3 {
+    font-size: 30px;
+    line-height: 125%;
+  }
 }
+
+/* SEKCJA - O NAS  */
 
 .frame_about {
   background-color: white;
@@ -507,6 +511,8 @@ h4 {
   margin-top: 0;
   margin-bottom: 0;
 }
+
+/* SEKCJA - STOPKA */
 
 .footer {
   height: 195px;

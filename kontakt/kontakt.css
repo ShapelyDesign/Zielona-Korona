@@ -1,3 +1,4 @@
+html,
 body {
   font-family: "Roboto Serif", serif;
   background: #fff;
@@ -41,6 +42,8 @@ h4 {
   align-items: center;
 }
 
+/* SEKCJA - MENU */
+
 .header {
   height: 60px;
   background-color: #163020;
@@ -72,7 +75,7 @@ h4 {
   text-decoration: none;
   font-family: "Roboto Serif", serif;
   font-weight: 500;
-  font-size: 22px;
+  font-size: 24px;
   color: #fff;
   background-color: none;
   border: none;
@@ -92,7 +95,7 @@ h4 {
   text-decoration: none;
   font-family: "Roboto Serif", serif;
   font-weight: 800;
-  font-size: 22px;
+  font-size: 24px;
   color: #b6c4b6;
   background-color: none;
   border: none;
@@ -120,6 +123,8 @@ h4 {
   }
 }
 
+/* SEKCJA - KONTAKT */
+
 .contacts {
   background-color: #fff;
   height: auto;
@@ -144,7 +149,6 @@ h4 {
 .contact {
   max-width: 1200px;
   margin: auto;
-
   display: flex;
   text-align: center;
   align-items: center;
@@ -172,15 +176,40 @@ h4 {
   padding: 0 3vw;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1080px) {
+  .container_contacts {
+    margin: auto;
+    padding-top: 30px;
+  }
+
+  .section_title {
+    font-size: 70px;
+    margin: 30px;
+  }
+
   .contact {
     flex-direction: column;
+    margin-top: 20px;
   }
 
   .long_text {
     width: auto;
   }
+
+  .contact_link h4 {
+    font-size: 25px;
+    padding-bottom: 30px;
+  }
 }
+
+@media screen and (max-width: 600px) {
+  .contact_link h4 {
+    font-size: 20px;
+    padding-bottom: 30px;
+  }
+}
+
+/* SEKCJA - ZDJĘCIE */
 
 .photo {
   background-image: url(jpg/garden.png);
@@ -191,6 +220,17 @@ h4 {
   margin-top: 4vw;
   margin-bottom: 4vw;
 }
+
+@media screen and (max-width: 1080px) {
+  .photo {
+    height: 350px;
+    margin-left: -150px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+}
+
+/* SEKCJA - MOTTO */
 
 .questions {
   background-color: #fff;
@@ -227,6 +267,26 @@ h4 {
   color: #0a0a0a;
   max-width: 400px;
 }
+
+@media screen and (max-width: 1080px) {
+  .question_text {
+    max-width: 80%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .question_text h2 {
+    font-size: 50px;
+    padding-bottom: 20px;
+    width: 70%;
+  }
+  .question_text p {
+    max-width: 600px;
+    line-height: 200%;
+  }
+}
+
+/* SEKCJA - STOPKA */
 
 .footer {
   height: 195px;
@@ -283,6 +343,7 @@ h4 {
 }
 
 .policy {
+  width: 100%;
   height: 55px;
   background-color: #163020;
   display: flex;
